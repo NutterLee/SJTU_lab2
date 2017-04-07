@@ -1,0 +1,66 @@
+﻿  Window.cpp
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(107): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(112): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(117): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\window.cpp(74): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\window.cpp(76): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): warning C4018: “<”: 有符号/无符号不匹配
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): note: 编译类 模板 成员函数“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”时
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(97): note: 参见对正在编译的函数 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”的引用
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(99): note: 参见对正在编译的类 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>”的引用
+  main.cpp
+  GUI.cpp
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(107): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(112): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(117): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): warning C4018: “<”: 有符号/无符号不匹配
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): note: 编译类 模板 成员函数“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”时
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(97): note: 参见对正在编译的函数 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”的引用
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(99): note: 参见对正在编译的类 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>”的引用
+  Graph.cpp
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(64): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(130): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(131): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(396): warning C4018: “>=”: 有符号/无符号不匹配
+  正在生成代码...
+MSVCRTD.lib(initializers.obj) : warning LNK4098: 默认库“libcmtd.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+fltkjpegd.lib(jcomapi.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jcomapi.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdapimin.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdapimin.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdapistd.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdapistd.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdatasrc.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdatasrc.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdcoefct.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdcoefct.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdcolor.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdcolor.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jddctmgr.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jddctmgr.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdhuff.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdhuff.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdinput.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdinput.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdmainct.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdmainct.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdmarker.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdmarker.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdmaster.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdmaster.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdmerge.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdmerge.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdphuff.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdphuff.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdpostct.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdpostct.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jdsample.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jdsample.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jerror.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jerror.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jidctflt.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jidctflt.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jidctfst.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jidctfst.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jidctint.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jidctint.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jidctred.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jidctred.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jmemmgr.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jmemmgr.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jmemnobs.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jmemnobs.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jquant1.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jquant1.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jquant2.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jquant2.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkjpegd.lib(jutils.obj) : warning LNK4099: 未找到 PDB“jpeg.pdb”(使用“fltkjpegd.lib(jutils.obj)”或在“C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\jpeg.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  lab2.vcxproj -> C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\lab2.exe
+  lab2.vcxproj -> C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\lab2.pdb (Full PDB)
