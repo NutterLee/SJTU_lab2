@@ -1,4 +1,4 @@
-﻿  main.cpp
+﻿  Window.cpp
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4309: “初始化”: 截断常量值
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
@@ -6,7 +6,80 @@ c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(107): warning C4018: “<”: 有符号/无符号不匹配
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(112): warning C4018: “<”: 有符号/无符号不匹配
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(117): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\main.cpp(11): error C2065: “Lines_window”: 未声明的标识符
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\main.cpp(11): error C2146: 语法错误: 缺少“;”(在标识符“win”的前面)
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\main.cpp(11): error C3861: “win”: 找不到标识符
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\main.cpp(12): error C3861: “gui_main”: 找不到标识符
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\window.cpp(74): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\window.cpp(76): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): warning C4018: “<”: 有符号/无符号不匹配
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): note: 编译类 模板 成员函数“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”时
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(97): note: 参见对正在编译的函数 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”的引用
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(99): note: 参见对正在编译的类 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>”的引用
+  mainWindow.cpp
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(107): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(112): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(117): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\mainwindow.cpp(13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): warning C4018: “<”: 有符号/无符号不匹配
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): note: 编译类 模板 成员函数“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”时
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(97): note: 参见对正在编译的函数 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”的引用
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(99): note: 参见对正在编译的类 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>”的引用
+  main.cpp
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(107): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(112): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(117): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): warning C4018: “<”: 有符号/无符号不匹配
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): note: 编译类 模板 成员函数“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”时
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(97): note: 参见对正在编译的函数 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”的引用
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(99): note: 参见对正在编译的类 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>”的引用
+  GUI.cpp
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(107): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(112): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(117): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): warning C4018: “<”: 有符号/无符号不匹配
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): note: 编译类 模板 成员函数“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”时
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(97): note: 参见对正在编译的函数 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”的引用
+  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(99): note: 参见对正在编译的类 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>”的引用
+  Graph.cpp
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4309: “初始化”: 截断常量值
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(64): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(130): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(131): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(396): warning C4018: “>=”: 有符号/无符号不匹配
+  正在生成代码...
+MSVCRTD.lib(initializers.obj) : warning LNK4098: 默认库“libcmtd.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numZero(void *,void *)" (?cb_numZero@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numOne(void *,void *)" (?cb_numOne@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numTwo(void *,void *)" (?cb_numTwo@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numThree(void *,void *)" (?cb_numThree@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numFour(void *,void *)" (?cb_numFour@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numFive(void *,void *)" (?cb_numFive@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numSix(void *,void *)" (?cb_numSix@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numSeven(void *,void *)" (?cb_numSeven@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numEight(void *,void *)" (?cb_numEight@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numNine(void *,void *)" (?cb_numNine@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numAdd(void *,void *)" (?cb_numAdd@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numDecrease(void *,void *)" (?cb_numDecrease@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numMultiply(void *,void *)" (?cb_numMultiply@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numDivide(void *,void *)" (?cb_numDivide@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numFactorial(void *,void *)" (?cb_numFactorial@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numPoint(void *,void *)" (?cb_numPoint@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_leftBracket(void *,void *)" (?cb_leftBracket@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_rightBracket(void *,void *)" (?cb_rightBracket@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: static void __cdecl mainWindow::cb_numDelete(void *,void *)" (?cb_numDelete@mainWindow@@CAXPAX0@Z)，该符号在函数 "public: __thiscall mainWindow::mainWindow(struct Point,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0mainWindow@@QAE@UPoint@@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: void __thiscall mainWindow::numberCalculate(void)" (?numberCalculate@mainWindow@@AAEXXZ)，该符号在函数 "private: static void __cdecl mainWindow::cb_calculate(void *,void *)" (?cb_calculate@mainWindow@@CAXPAX0@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: void __thiscall mainWindow::numberDraw(void)" (?numberDraw@mainWindow@@AAEXXZ)，该符号在函数 "private: static void __cdecl mainWindow::cb_draw(void *,void *)" (?cb_draw@mainWindow@@CAXPAX0@Z) 中被引用
+mainWindow.obj : error LNK2019: 无法解析的外部符号 "private: void __thiscall mainWindow::numberShow(void)" (?numberShow@mainWindow@@AAEXXZ)，该符号在函数 "private: static void __cdecl mainWindow::cb_show(void *,void *)" (?cb_show@mainWindow@@CAXPAX0@Z) 中被引用
+C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\lab2.exe : fatal error LNK1120: 22 个无法解析的外部命令

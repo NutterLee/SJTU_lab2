@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="Graph.h" />
     <ClInclude Include="GUI.h" />
+    <ClInclude Include="mainWindow.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>

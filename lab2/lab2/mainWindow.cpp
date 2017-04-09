@@ -5,60 +5,67 @@
 #include"Point.h"
 #include"token.h"
 #include"Window.h"
+#include"mainWindow.h"
 using namespace Graph_lib;
 
-struct mainWindow:Window
+
+mainWindow::mainWindow(Point xy, int w, int h, const string & title):Window(xy,w,h,title),
+numOne(Point(x_max()*1/20.,y_max()/10*3),x_max()/20,y_max()/10,"1",cb_numOne),
+numTwo(Point(x_max()*3/20,y_max()/10*3), x_max() / 20, y_max() / 10, "2", cb_numTwo),
+numThree(Point(x_max() * 5 / 20, y_max() / 10 * 3), x_max() / 20, y_max() / 10, "3", cb_numThree),
+numAdd(Point(x_max()*7/20,y_max()/10*3), x_max() / 20, y_max() / 10, "+", cb_numAdd),
+leftBracket(Point(x_max() * 9 / 20, y_max() / 10 * 3), x_max() / 20, y_max() / 10, "(", cb_leftBracket),
+numFour(Point(x_max() * 1 / 20, y_max() / 10 * 5), x_max() / 20, y_max() / 10, "4", cb_numFour),
+numFive(Point(x_max() * 3 / 20, y_max() / 10 * 5), x_max() / 20, y_max() / 10, "5", cb_numFive),
+numSix(Point(x_max() * 5 / 20, y_max() / 10 *5), x_max() / 20, y_max() / 10, "6", cb_numSix),
+numDecrease(Point(x_max() * 7/ 20, y_max() / 10 * 5), x_max() / 20, y_max() / 10, "-", cb_numDecrease),
+rightBracket(Point(x_max() * 9 / 20, y_max() / 10 * 5), x_max() / 20, y_max() / 10, ")", cb_rightBracket),
+numSeven(Point(x_max() * 1/ 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10, "7", cb_numSeven),
+numEight(Point(x_max() * 3 / 20, y_max() / 10 *7), x_max() / 20, y_max() / 10, "8", cb_numEight),
+numNine(Point(x_max() * 5 / 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10, "9", cb_numNine),
+numMultiply(Point(x_max() * 7/ 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10, "*", cb_numMultiply),
+numDelete(Point(x_max() * 9 / 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10, "del", cb_numDelete),
+numZero(Point(x_max() * 1 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "0", cb_numZero),
+numPoint(Point(x_max() * 3 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, ".", cb_numPoint),
+numFactorial(Point(x_max() * 5 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "!", cb_numFactorial),
+numDivide(Point(x_max() * 7/ 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "/", cb_numDivide),
+numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20,y_max()/10,"Calculate",cb_calculate),
+numDraw(Point(x_max()*18/20,y_max()/10*1),x_max()/20,y_max()/10,"Draw",cb_draw)
 {
-	mainWindow(Point xy, int w, int h, const string& title);
-private:
+	attach(numZero);
+	attach(numOne);
+	attach(numTwo);
+	attach(numThree);
+	attach(numFour);
+	attach(numFive);
+	attach(numSix);
+	attach(numSeven);
+	attach(numEight);
+	attach(numNine);
+	attach(numPoint);
+	attach(numAdd);
+	attach(numDecrease);
+	attach(numDivide);
+	attach(numMultiply);
+	attach(numFactorial);
+	attach(leftBracket);
+	attach(rightBracket);
+	attach(numDelete);
 
-	//计算、绘图,为了简化问题，将绘画与计算分离
-	Button numCalculate;
-	Button numDraw;
 
-	//输入框与输出框
-	In_box inputBox;
-	Out_box outputBox;
+}
 
-	//数字按钮
-	Button numZero;
-	Button numOne;
-	Button numTwo;
-	Button numThree;
-	Button numFour;
-	Button numFive;
-	Button numSix;
-	Button numSeven;
-	Button numEight;
-	Button numNine;
-	
-	//小数点
-	Button numPoint;
+void mainWindow::cb_calculate(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).numberCalculate();
+}
 
-	//()按钮
-	Button leftBracket;
-	Button rightBracket;
+void mainWindow::cb_draw(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).numberDraw();
+}
 
-	//运算符
-	Button multiply;
-	Button divide;
-	Button add;
-	Button decrease;
-	Button factorial;
-
-	//M R标记
-	Button numM;
-	Button numR;
-
-	//删除按钮
-	Button numDelete;
-
-	//基础坐标系
-	Axis baseAxis;
-
-	//回调函数
-	static void cb_calculate(Address, Address);//计算结果
-	static void cb_draw(Address, Address);//绘图
-	static void cb_show(Address, Address);//每输入一个字符要在输入框显示
-
-};
+void mainWindow::cb_show(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).numberShow();
+}
