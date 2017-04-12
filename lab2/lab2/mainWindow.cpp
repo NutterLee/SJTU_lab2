@@ -7,7 +7,7 @@
 #include"Window.h"
 #include"mainWindow.h"
 using namespace Graph_lib;
-
+stringstream calculateFlow;
 
 mainWindow::mainWindow(Point xy, int w, int h, const string & title):Window(xy,w,h,title),
 numOne(Point(x_max()*1/20.,y_max()/10*3),x_max()/20,y_max()/10,"1",cb_numOne),
@@ -28,9 +28,9 @@ numDelete(Point(x_max() * 9 / 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10,
 numZero(Point(x_max() * 1 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "0", cb_numZero),
 numPoint(Point(x_max() * 3 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, ".", cb_numPoint),
 numFactorial(Point(x_max() * 5 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "!", cb_numFactorial),
-numDivide(Point(x_max() * 7/ 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "/", cb_numDivide),
-numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20,y_max()/10,"Calculate",cb_calculate),
-numDraw(Point(x_max()*18/20,y_max()/10*1),x_max()/20,y_max()/10,"Draw",cb_draw)
+numDivide(Point(x_max() * 7/ 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "/", cb_numDivide)//,
+//numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20,y_max()/10,"Calculate",cb_calculate),
+//numDraw(Point(x_max()*18/20,y_max()/10*1),x_max()/20,y_max()/10,"Draw",cb_draw)*/
 {
 	attach(numZero);
 	attach(numOne);
@@ -52,9 +52,8 @@ numDraw(Point(x_max()*18/20,y_max()/10*1),x_max()/20,y_max()/10,"Draw",cb_draw)
 	attach(rightBracket);
 	attach(numDelete);
 
-
 }
-
+/*
 void mainWindow::cb_calculate(Address, Address pw)
 {
 	reference_to<mainWindow>(pw).numberCalculate();
@@ -68,4 +67,199 @@ void mainWindow::cb_draw(Address, Address pw)
 void mainWindow::cb_show(Address, Address pw)
 {
 	reference_to<mainWindow>(pw).numberShow();
+}
+*/
+
+void mainWindow::cb_numZero(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumZero();
+}
+
+void mainWindow::cb_numOne(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumOne();
+}
+
+void mainWindow::cb_numTwo(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumTwo();
+}
+
+void mainWindow::cb_numThree(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumThree();
+}
+
+void mainWindow::cb_numFour(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumFour();
+}
+
+void mainWindow::cb_numFive(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumFive();
+}
+
+void mainWindow::cb_numSix(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumSix();
+}
+
+void mainWindow::cb_numSeven(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumSeven();
+}
+
+void mainWindow::cb_numEight(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumEight();
+}
+
+void mainWindow::cb_numNine(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumNine();
+}
+
+void mainWindow::cb_numAdd(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumAdd();
+}
+
+void mainWindow::cb_numDecrease(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumDecrease();
+}
+
+void mainWindow::cb_numMultiply(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumMultiply();
+}
+
+void mainWindow::cb_numDivide(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumDivide();
+}
+
+void mainWindow::cb_numFactorial(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumFactorial();
+}
+
+void mainWindow::cb_numPoint(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumPoint();
+}
+
+void mainWindow::cb_leftBracket(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonLeftBracket();
+}
+
+void mainWindow::cb_rightBracket(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonRightBracket();
+}
+
+void mainWindow::cb_numDelete(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumDelete();
+}
+
+void mainWindow::buttonNumZero()
+{
+	calculateFlow << 0;
+}
+
+void mainWindow::buttonNumOne()
+{
+	calculateFlow << 1;
+}
+
+void mainWindow::buttonNumTwo()
+{
+	calculateFlow << 2;
+}
+
+void mainWindow::buttonNumThree()
+{
+	calculateFlow << 3;
+}
+
+void mainWindow::buttonNumFour()
+{
+	calculateFlow << 4;
+}
+
+void mainWindow::buttonNumFive()
+{
+	calculateFlow << 5;
+}
+
+void mainWindow::buttonNumSix()
+{
+	calculateFlow << 6;
+}
+
+void mainWindow::buttonNumSeven()
+{
+	calculateFlow << 7;
+}
+
+void mainWindow::buttonNumEight()
+{
+	calculateFlow << 8;
+}
+
+void mainWindow::buttonNumNine()
+{
+	calculateFlow << 9;
+}
+
+void mainWindow::buttonNumAdd()
+{
+	calculateFlow << '+';
+}
+
+void mainWindow::buttonNumDecrease()
+{
+	calculateFlow << '-';
+}
+
+void mainWindow::buttonNumMultiply()
+{
+	calculateFlow << '*';
+}
+
+void mainWindow::buttonNumDivide()
+{
+	calculateFlow << '/';
+}
+
+void mainWindow::buttonNumFactorial()
+{
+	calculateFlow << '!';
+}
+
+void mainWindow::buttonNumPoint()
+{
+	calculateFlow << '.';
+}
+
+void mainWindow::buttonLeftBracket()
+{
+	calculateFlow << '(';
+}
+
+void mainWindow::buttonRightBracket()
+{
+	calculateFlow << ')';
+}
+
+void mainWindow::buttonNumDelete()
+{
+	string tmp;
+	calculateFlow >> tmp;
+	auto pos = tmp.end()-1;//end指向的是string后面的哨兵位置
+	tmp.erase(pos);
+	calculateFlow << tmp;
 }
