@@ -28,7 +28,12 @@ numDelete(Point(x_max() * 9 / 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10,
 numZero(Point(x_max() * 1 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "0", cb_numZero),
 numPoint(Point(x_max() * 3 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, ".", cb_numPoint),
 numFactorial(Point(x_max() * 5 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "!", cb_numFactorial),
-numDivide(Point(x_max() * 7/ 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "/", cb_numDivide)//,
+numDivide(Point(x_max() * 7/ 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "/", cb_numDivide),
+outputFlow(Point(1.5*x_max()/20,y_max()/10),y_max()/4,x_max()/20,"current:"),
+outputResult(Point(2*x_max() / 4, y_max() / 10), y_max() / 4, x_max() / 20, "result:"),
+baseAxisX(Axis::x,Point(x_max()/2*1.1,y_max()/10*8),x_max()/3,0,"x"),
+baseAxisY(Axis::y, Point(x_max() /2*1.1, y_max() / 10 * 8), x_max() /3,0, "y")
+//,
 //numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20,y_max()/10,"Calculate",cb_calculate),
 //numDraw(Point(x_max()*18/20,y_max()/10*1),x_max()/20,y_max()/10,"Draw",cb_draw)*/
 {
@@ -51,14 +56,17 @@ numDivide(Point(x_max() * 7/ 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, 
 	attach(leftBracket);
 	attach(rightBracket);
 	attach(numDelete);
-
+	attach(outputFlow);
+	attach(outputResult);
+	attach(baseAxisX);
+	attach(baseAxisY);
 }
-/*
+
 void mainWindow::cb_calculate(Address, Address pw)
 {
 	reference_to<mainWindow>(pw).numberCalculate();
 }
-
+/*
 void mainWindow::cb_draw(Address, Address pw)
 {
 	reference_to<mainWindow>(pw).numberDraw();
@@ -253,7 +261,7 @@ void mainWindow::buttonLeftBracket()
 void mainWindow::buttonRightBracket()
 {
 	calculateFlow << ')';
-}
+} 
 
 void mainWindow::buttonNumDelete()
 {
@@ -262,4 +270,36 @@ void mainWindow::buttonNumDelete()
 	auto pos = tmp.end()-1;//end指向的是string后面的哨兵位置
 	tmp.erase(pos);
 	calculateFlow << tmp;
+}
+
+void mainWindow::numberCalculate()
+{
+	try {
+		Token t = ts.get();
+		//while (t.kind == ';' || t.kind == '\r')t = ts.get();//忽略；回车
+	/*	if (t.kind == 'q')
+		{
+			system("pause");
+			return 0;
+		}
+		*/ //只会输入数字和运算符号
+		ts.putback(t);
+		double tmp = expression();
+		cout << "=" << tmp << endl;//注： cout要改成向out_box输出的一个东西
+
+		if (saveResult == true)
+		{
+			preResult = tmp;
+			saveResult = false;
+		}
+		ts.reset();
+	}//有机会把错误处理函数的cerr改成向out_box的输出
+	catch (divByZero) { cerr << "divided by zero" << endl; }
+	catch (missRightPart) { cerr << "')' expected" << endl; }
+	catch (priExp) { cerr << "primary expected" << endl; }
+	catch (bufferFull) { cerr << "putback() into a full buffer" << endl; }
+	catch (badToken) { cerr << "Bad token" << endl; }
+	catch (posNumExp) { cerr << "a positive number required for factorial" << endl; }
+	catch (intRequired) { cerr << "an interger required for your calculation" << endl; }
+	catch (...) { cerr << "unexpected error" << endl; }
 }

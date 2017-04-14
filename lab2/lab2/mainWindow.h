@@ -16,12 +16,13 @@ struct mainWindow :Window
 private:
 
 	//计算、绘图,为了简化问题，将绘画与计算分离
-//	Button numCalculate;
+  //	Button numCalculate;
 	//Button numDraw;
 
-	//输入框与输出框
-	//	In_box inputBox;
-	//	Out_box outputBox;
+	//输出框
+	
+	Out_box outputFlow; //输出当前的stringstream
+	Out_box outputResult;
 
 	//数字按钮
 	Button numZero;
@@ -53,11 +54,12 @@ private:
 	Button numDelete;
 
 	//基础坐标系
-	//	Axis baseAxis;
-	/*
+	Axis baseAxisX;
+	Axis baseAxisY;
+	
 	//回调函数
 	static void cb_calculate(Address, Address);//计算结果
-	static void cb_draw(Address, Address);//绘图
+	/*static void cb_draw(Address, Address);//绘图
 	static void cb_show(Address, Address);//每输入一个字符要在输入框显示
 	*/
 	static void cb_numZero(Address, Address);
@@ -84,7 +86,7 @@ private:
 	static void cb_numDelete(Address, Address);
 
 	//被回调函数唤起的函数
-	//void numberCalculate();//参数和返回值可能要改，先留意
+	void numberCalculate();//参数和返回值可能要改，先留意
 	//void numberDraw();
 	//void numberShow();
 	

@@ -1,4 +1,10 @@
+#include<iostream>
+#include"Graph.h"
+#include"GUI.h"
+#include"Point.h"
 #include"token.h"
+#include"Window.h"
+#include"mainWindow.h"
 
 
 void Token_stream::reset()
@@ -22,8 +28,8 @@ Token Token_stream::get()
 	}
 
 	char ch;
-	std::cin >> ch;
-
+//	std::cin >> ch;
+	calculateFlow >> ch; //从生成的calculateFlow里面读取字符
 	switch (ch)
 	{
 	case print:
@@ -33,9 +39,9 @@ Token Token_stream::get()
 	case'.':
 	case'0':case'1':case'2':case'3':case'4':case'5':case'6':case'7':case'8':case'9':
 	{
-		std::cin.putback(ch);
+		calculateFlow.putback(ch);
 		double val;
-		std::cin >> val;
+		calculateFlow >> val;
 		return Token(number, val);
 	}
 	case'M'://表示开启存储功能
