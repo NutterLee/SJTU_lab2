@@ -8,7 +8,7 @@
 
 //头文件里不能定义全局变量（除了const），所以全部转移到这里
 
-//Token_stream ts;//输入流
+Token_stream ts;//输入流
 
 //存储答案
 double preResult = 0;

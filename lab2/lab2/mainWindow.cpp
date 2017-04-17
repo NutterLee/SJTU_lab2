@@ -32,9 +32,9 @@ numDivide(Point(x_max() * 7/ 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, 
 outputFlow(Point(1.5*x_max()/20,y_max()/10),y_max()/4,x_max()/20,"current:"),
 outputResult(Point(2*x_max() / 4, y_max() / 10), y_max() / 4, x_max() / 20, "result:"),
 baseAxisX(Axis::x,Point(x_max()/2*1.1,y_max()/10*8),x_max()/3,0,"x"),
-baseAxisY(Axis::y, Point(x_max() /2*1.1, y_max() / 10 * 8), x_max() /3,0, "y")
+baseAxisY(Axis::y, Point(x_max() /2*1.1, y_max() / 10 * 8), x_max() /3,0, "y"),
 //,
-//numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20,y_max()/10,"Calculate",cb_calculate),
+numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20,y_max()/10,"Calculate",cb_calculate)
 //numDraw(Point(x_max()*18/20,y_max()/10*1),x_max()/20,y_max()/10,"Draw",cb_draw)*/
 {
 	attach(numZero);
@@ -60,6 +60,7 @@ baseAxisY(Axis::y, Point(x_max() /2*1.1, y_max() / 10 * 8), x_max() /3,0, "y")
 	attach(outputResult);
 	attach(baseAxisX);
 	attach(baseAxisY);
+	attach(numCalculate);
 }
 
 void mainWindow::cb_calculate(Address, Address pw)
@@ -176,105 +177,126 @@ void mainWindow::cb_numDelete(Address, Address pw)
 void mainWindow::buttonNumZero()
 {
 	calculateFlow << 0;
+	numberShow();
 }
 
 void mainWindow::buttonNumOne()
 {
 	calculateFlow << 1;
+	numberShow();
 }
 
 void mainWindow::buttonNumTwo()
 {
 	calculateFlow << 2;
+	numberShow();
 }
 
 void mainWindow::buttonNumThree()
 {
 	calculateFlow << 3;
+	numberShow();
 }
 
 void mainWindow::buttonNumFour()
 {
 	calculateFlow << 4;
+	numberShow();
 }
 
 void mainWindow::buttonNumFive()
 {
 	calculateFlow << 5;
+	numberShow();
 }
 
 void mainWindow::buttonNumSix()
 {
 	calculateFlow << 6;
+	numberShow();
 }
 
 void mainWindow::buttonNumSeven()
 {
 	calculateFlow << 7;
+	numberShow();
 }
 
 void mainWindow::buttonNumEight()
 {
 	calculateFlow << 8;
+	numberShow();
 }
 
 void mainWindow::buttonNumNine()
 {
 	calculateFlow << 9;
+	numberShow();
 }
 
 void mainWindow::buttonNumAdd()
 {
 	calculateFlow << '+';
+	numberShow();
 }
 
 void mainWindow::buttonNumDecrease()
 {
 	calculateFlow << '-';
+	numberShow();
 }
 
 void mainWindow::buttonNumMultiply()
 {
 	calculateFlow << '*';
+	numberShow();
 }
 
 void mainWindow::buttonNumDivide()
 {
 	calculateFlow << '/';
+	numberShow();
 }
 
 void mainWindow::buttonNumFactorial()
 {
 	calculateFlow << '!';
+	numberShow();
 }
 
 void mainWindow::buttonNumPoint()
 {
 	calculateFlow << '.';
+	numberShow();
 }
 
 void mainWindow::buttonLeftBracket()
 {
 	calculateFlow << '(';
+	numberShow();
 }
 
 void mainWindow::buttonRightBracket()
 {
 	calculateFlow << ')';
+	numberShow();
 } 
 
-void mainWindow::buttonNumDelete()
+void mainWindow::buttonNumDelete() 
 {
 	string tmp;
-	calculateFlow >> tmp;
+	tmp = calculateFlow.str();
 	auto pos = tmp.end()-1;//end指向的是string后面的哨兵位置
 	tmp.erase(pos);
+	calculateFlow.str("");
 	calculateFlow << tmp;
+	numberShow();
 }
 
 void mainWindow::numberCalculate()
 {
 	try {
+		calculateFlow << ";";
 		Token t = ts.get();
 		//while (t.kind == ';' || t.kind == '\r')t = ts.get();//忽略；回车
 	/*	if (t.kind == 'q')
@@ -285,7 +307,10 @@ void mainWindow::numberCalculate()
 		*/ //只会输入数字和运算符号
 		ts.putback(t);
 		double tmp = expression();
-		cout << "=" << tmp << endl;//注： cout要改成向out_box输出的一个东西
+		stringstream tmpFlow;
+		tmpFlow << tmp;
+		outputResult.put(tmpFlow.str());
+		//cout << "=" << tmp << endl;//注： cout要改成向out_box输出的一个东西
 
 		if (saveResult == true)
 		{
@@ -293,13 +318,19 @@ void mainWindow::numberCalculate()
 			saveResult = false;
 		}
 		ts.reset();
-	}//有机会把错误处理函数的cerr改成向out_box的输出
-	catch (divByZero) { cerr << "divided by zero" << endl; }
-	catch (missRightPart) { cerr << "')' expected" << endl; }
-	catch (priExp) { cerr << "primary expected" << endl; }
-	catch (bufferFull) { cerr << "putback() into a full buffer" << endl; }
-	catch (badToken) { cerr << "Bad token" << endl; }
-	catch (posNumExp) { cerr << "a positive number required for factorial" << endl; }
-	catch (intRequired) { cerr << "an interger required for your calculation" << endl; }
-	catch (...) { cerr << "unexpected error" << endl; }
+		calculateFlow.str("");//清空stringstream
+	}//将错误输出到输出框
+	catch (divByZero) { outputResult.put("divided by zero"); calculateFlow.str("");	}
+	catch (missRightPart) { outputResult.put( "')' expected" ); calculateFlow.str(""); }
+	catch (priExp) { outputResult.put("primary expected"); calculateFlow.str("");	}
+	catch (bufferFull) { outputResult.put("putback() into a full buffer"); calculateFlow.str(""); }
+	catch (badToken) { outputResult.put("Bad token"); calculateFlow.str(""); }
+	catch (posNumExp) {outputResult.put( "a positive number required" ); calculateFlow.str("");	}
+	catch (intRequired) { outputResult.put("an interger required" ); calculateFlow.str("");	}
+	catch (...) { outputResult.put( "unexpected error" ); calculateFlow.str("");	}
+}
+
+void mainWindow::numberShow()
+{
+	outputFlow.put(calculateFlow.str());	
 }

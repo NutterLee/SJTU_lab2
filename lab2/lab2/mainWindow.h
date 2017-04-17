@@ -16,7 +16,7 @@ struct mainWindow :Window
 private:
 
 	//计算、绘图,为了简化问题，将绘画与计算分离
-  //	Button numCalculate;
+    Button numCalculate;
 	//Button numDraw;
 
 	//输出框
@@ -88,7 +88,7 @@ private:
 	//被回调函数唤起的函数
 	void numberCalculate();//参数和返回值可能要改，先留意
 	//void numberDraw();
-	//void numberShow();
+	void numberShow();
 	
 	void buttonNumZero();
 	void buttonNumOne();
