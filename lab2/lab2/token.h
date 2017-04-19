@@ -20,6 +20,9 @@ extern bool saveResult;
 //(-2)与-2的区分flag,默认true
  extern bool isNegtive  ;
 
+ //存储表达式
+ extern vector<string>drawFlow;
+
 //错误抛出class
 class divByZero {};
 class missRightPart {};

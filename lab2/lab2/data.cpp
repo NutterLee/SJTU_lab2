@@ -18,3 +18,6 @@ bool saveResult = false;
 
 //(-2)与-2的区分flag,默认true
 bool isNegtive = true;
+
+//存储绘图表达式
+vector<string>drawFlow;

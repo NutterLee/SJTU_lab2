@@ -44,6 +44,8 @@ Token Token_stream::get()
 		calculateFlow >> val;
 		return Token(number, val);
 	}
+	case'x':
+		return Token(ch);
 	case'M'://表示开启存储功能
 	{
 		saveResult = true;
