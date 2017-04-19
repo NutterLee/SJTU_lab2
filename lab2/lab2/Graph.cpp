@@ -293,7 +293,7 @@ Axis::Axis(Orientation d, Point xy, int length, int n, string lab) :
             }
         }
         // label under the line
-        label.move(length/3,xy.y+20);
+        label.move(xy.x+length/3*2.8,xy.y+20);
         break;
     }
     case Axis::y:

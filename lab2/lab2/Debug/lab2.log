@@ -1,18 +1,12 @@
-﻿  mainWindow.cpp
+﻿  Graph.cpp
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(45): warning C4309: “初始化”: 截断常量值
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4305: “初始化”: 从“Graph_lib::Color::Transparency”到“char”截断
 c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(47): warning C4309: “初始化”: 截断常量值
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(107): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(112): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(117): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\mainwindow.cpp(13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\mainwindow.cpp(32): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\mainwindow.cpp(34): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\mainwindow.cpp(35): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): warning C4018: “<”: 有符号/无符号不匹配
-  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.h(130): note: 编译类 模板 成员函数“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”时
-  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(97): note: 参见对正在编译的函数 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>::~Vector_ref(void)”的引用
-  c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\gui.h(99): note: 参见对正在编译的类 模板 实例化“Graph_lib::Vector_ref<Graph_lib::Button>”的引用
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(64): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(130): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(131): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(296): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\17370\onedrive\cs-homework\c++\sjtu_lab2\lab2\lab2\graph.cpp(396): warning C4018: “>=”: 有符号/无符号不匹配
   lab2.vcxproj -> C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\lab2.exe
   lab2.vcxproj -> C:\Users\17370\OneDrive\CS-HOMEWORK\C++\SJTU_lab2\lab2\Debug\lab2.pdb (Full PDB)

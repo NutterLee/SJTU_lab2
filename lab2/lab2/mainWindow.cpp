@@ -34,7 +34,7 @@ outputResult(Point(2*x_max() / 4, y_max() / 10), y_max() / 4, x_max() / 20, "res
 baseAxisX(Axis::x,Point(x_max()/2*1.1,y_max()/10*8),x_max()/3,0,"x"),
 baseAxisY(Axis::y, Point(x_max() /2*1.1, y_max() / 10 * 8), x_max() /3,0, "y"),
 //,
-numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20,y_max()/10,"Calculate",cb_calculate)
+numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20*1.3,y_max()/10,"Calculate",cb_calculate)
 //numDraw(Point(x_max()*18/20,y_max()/10*1),x_max()/20,y_max()/10,"Draw",cb_draw)*/
 {
 	attach(numZero);
@@ -59,6 +59,8 @@ numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20,y_max()/10,"Calculate"
 	attach(outputFlow);
 	attach(outputResult);
 	attach(baseAxisX);
+	//baseAxisX.label.move(x_max() / 2 * 1.1, y_max() / 10 * 8);
+	//attach(baseAxisX.label);
 	attach(baseAxisY);
 	attach(numCalculate);
 }
