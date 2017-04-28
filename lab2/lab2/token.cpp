@@ -44,8 +44,7 @@ Token Token_stream::get()
 		calculateFlow >> val;
 		return Token(number, val);
 	}
-	case'x':
-		return Token(ch);
+
 	case'M'://表示开启存储功能
 	{
 		saveResult = true;
@@ -55,6 +54,10 @@ Token Token_stream::get()
 	{
 		if (saveResult == false) throw badToken();
 		return Token(number, preResult);
+	}
+	case'e':
+	{
+		return Token(number,2.718);
 	}
 	default:
 	{		throw badToken();	}

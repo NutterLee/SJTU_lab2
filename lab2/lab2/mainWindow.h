@@ -10,6 +10,7 @@ using namespace Graph_lib;
 using namespace std;
 
 extern stringstream calculateFlow; //计算时给计算函数用的输入流，每个button就是在这个输入流里面修改
+extern double final_result;
 struct mainWindow :Window
 {
 	mainWindow(Point xy, int w, int h, const string& title);
@@ -17,7 +18,7 @@ private:
 
 	//计算、绘图,为了简化问题，将绘画与计算分离
     Button numCalculate;
-	//Button numDraw;
+	Button numDraw;
 
 	//输出框
 	
@@ -49,18 +50,21 @@ private:
 	Button numAdd;
 	Button numDecrease;
 	Button numFactorial;
+	//x
+	Button numX;
 
 	//删除按钮
 	Button numDelete;
-
+	/*
 	//基础坐标系
 	Axis baseAxisX;
 	Axis baseAxisY;
-	
+	Open_polyline line;
 	//回调函数
+	*/
 	static void cb_calculate(Address, Address);//计算结果
-	/*static void cb_draw(Address, Address);//绘图
-	static void cb_show(Address, Address);//每输入一个字符要在输入框显示
+	static void cb_draw(Address, Address);//绘图
+	/*static void cb_show(Address, Address);//每输入一个字符要在输入框显示
 	*/
 	static void cb_numZero(Address, Address);
 	static void cb_numOne(Address, Address);
@@ -77,6 +81,7 @@ private:
 	static void cb_numMultiply(Address, Address);
 	static void cb_numDivide(Address, Address);
 	static void cb_numFactorial(Address, Address);
+	static void cb_numX(Address, Address);
 
 	static void cb_numPoint(Address, Address);
 
@@ -87,7 +92,7 @@ private:
 
 	//被回调函数唤起的函数
 	void numberCalculate();//参数和返回值可能要改，先留意
-	//void numberDraw();
+	void numberDraw();
 	void numberShow();
 	
 	void buttonNumZero();
@@ -108,6 +113,7 @@ private:
 	void buttonNumPoint();
 	void buttonLeftBracket();
 	void buttonRightBracket();
+	void buttonNumX();
 	void buttonNumDelete();
 
 };

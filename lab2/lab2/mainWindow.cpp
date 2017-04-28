@@ -8,34 +8,35 @@
 #include"mainWindow.h"
 using namespace Graph_lib;
 stringstream calculateFlow;
-
+double button_width = x_max() / 9.5;
+double button_height = y_max() / 12.0;
+double base_x = button_width / 2.7;
+double base_y = button_height / 2.2;
 mainWindow::mainWindow(Point xy, int w, int h, const string & title):Window(xy,w,h,title),
-numOne(Point(x_max()*1/20.,y_max()/10*3),x_max()/20,y_max()/10,"1",cb_numOne),
-numTwo(Point(x_max()*3/20,y_max()/10*3), x_max() / 20, y_max() / 10, "2", cb_numTwo),
-numThree(Point(x_max() * 5 / 20, y_max() / 10 * 3), x_max() / 20, y_max() / 10, "3", cb_numThree),
-numAdd(Point(x_max()*7/20,y_max()/10*3), x_max() / 20, y_max() / 10, "+", cb_numAdd),
-leftBracket(Point(x_max() * 9 / 20, y_max() / 10 * 3), x_max() / 20, y_max() / 10, "(", cb_leftBracket),
-numFour(Point(x_max() * 1 / 20, y_max() / 10 * 5), x_max() / 20, y_max() / 10, "4", cb_numFour),
-numFive(Point(x_max() * 3 / 20, y_max() / 10 * 5), x_max() / 20, y_max() / 10, "5", cb_numFive),
-numSix(Point(x_max() * 5 / 20, y_max() / 10 *5), x_max() / 20, y_max() / 10, "6", cb_numSix),
-numDecrease(Point(x_max() * 7/ 20, y_max() / 10 * 5), x_max() / 20, y_max() / 10, "-", cb_numDecrease),
-rightBracket(Point(x_max() * 9 / 20, y_max() / 10 * 5), x_max() / 20, y_max() / 10, ")", cb_rightBracket),
-numSeven(Point(x_max() * 1/ 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10, "7", cb_numSeven),
-numEight(Point(x_max() * 3 / 20, y_max() / 10 *7), x_max() / 20, y_max() / 10, "8", cb_numEight),
-numNine(Point(x_max() * 5 / 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10, "9", cb_numNine),
-numMultiply(Point(x_max() * 7/ 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10, "*", cb_numMultiply),
-numDelete(Point(x_max() * 9 / 20, y_max() / 10 * 7), x_max() / 20, y_max() / 10, "del", cb_numDelete),
-numZero(Point(x_max() * 1 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "0", cb_numZero),
-numPoint(Point(x_max() * 3 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, ".", cb_numPoint),
-numFactorial(Point(x_max() * 5 / 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "!", cb_numFactorial),
-numDivide(Point(x_max() * 7/ 20, y_max() / 10 * 9), x_max() / 20, y_max() / 10, "/", cb_numDivide),
-outputFlow(Point(1.5*x_max()/20,y_max()/10),y_max()/4,x_max()/20,"current:"),
-outputResult(Point(2*x_max() / 4, y_max() / 10), y_max() / 4, x_max() / 20, "result:"),
-baseAxisX(Axis::x,Point(x_max()/2*1.1,y_max()/10*8),x_max()/3,0,"x"),
-baseAxisY(Axis::y, Point(x_max() /2*1.1, y_max() / 10 * 8), x_max() /3,0, "y"),
-//,
-numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20*1.3,y_max()/10,"Calculate",cb_calculate)
-//numDraw(Point(x_max()*18/20,y_max()/10*1),x_max()/20,y_max()/10,"Draw",cb_draw)*/
+numOne(Point(base_x,base_y*4), button_width, button_height,"1",cb_numOne),
+numTwo(Point(base_x*4, base_y * 4), button_width, button_height, "2", cb_numTwo),
+numThree(Point(base_x*7, base_y * 4), button_width, button_height, "3", cb_numThree),
+numAdd(Point(base_x*10, base_y * 4), button_width, button_height, "+", cb_numAdd),
+leftBracket(Point(base_x*13, base_y * 4), button_width, button_height, "(", cb_leftBracket),
+numFour(Point(base_x, base_y*7), button_width, button_height, "4", cb_numFour),
+numFive(Point(base_x*4, base_y * 7), button_width, button_height, "5", cb_numFive),
+numSix(Point(base_x*7, base_y * 7), button_width, button_height, "6", cb_numSix),
+numDecrease(Point(base_x*10, base_y * 7), button_width, button_height, "-", cb_numDecrease),
+rightBracket(Point(base_x*13, base_y * 7), button_width, button_height, ")", cb_rightBracket),
+numSeven(Point(base_x, base_y * 10), button_width, button_height, "7", cb_numSeven),
+numEight(Point(base_x*4, base_y * 10), button_width, button_height, "8", cb_numEight),
+numNine(Point(base_x*7, base_y * 10), button_width, button_height, "9", cb_numNine),
+numMultiply(Point(base_x*10, base_y * 10), button_width, button_height, "*", cb_numMultiply),
+numDelete(Point(base_x*13, base_y * 10), button_width, button_height, "del", cb_numDelete),
+numZero(Point(base_x, base_y * 13), button_width, button_height, "0", cb_numZero),
+numPoint(Point(base_x*4, base_y * 13), button_width, button_height, ".", cb_numPoint),
+numFactorial(Point(base_x*7, base_y * 13), button_width, button_height, "!", cb_numFactorial),
+numDivide(Point(base_x*10, base_y * 13), button_width, button_height, "/", cb_numDivide),
+numX(Point(base_x*13, base_y * 13), button_width, button_height, "x", cb_numX),
+outputFlow(Point(base_x*2,base_y),base_x*3,button_height/1.2,"current:"),
+outputResult(Point(base_x*6, base_y), base_x*3, button_height/1.2, "result:"),
+numCalculate(Point(base_x*10,base_y), button_width/1.2, button_height/1.2,"Calculate",cb_calculate),
+numDraw(Point(base_x*13,base_y), button_width/1.2, button_height/1.2,"Draw",cb_draw)
 {
 	attach(numZero);
 	attach(numOne);
@@ -58,23 +59,26 @@ numCalculate(Point(x_max()*16/20,y_max()/10*1),x_max()/20*1.3,y_max()/10,"Calcul
 	attach(numDelete);
 	attach(outputFlow);
 	attach(outputResult);
-	attach(baseAxisX);
+	//attach(baseAxisX);
 	//baseAxisX.label.move(x_max() / 2 * 1.1, y_max() / 10 * 8);
 	//attach(baseAxisX.label);
-	attach(baseAxisY);
+	//attach(baseAxisY);
 	attach(numCalculate);
+	attach(numX);
+	attach(numDraw);
+	//attach(line);
 }
 
 void mainWindow::cb_calculate(Address, Address pw)
 {
 	reference_to<mainWindow>(pw).numberCalculate();
 }
-/*
+
 void mainWindow::cb_draw(Address, Address pw)
 {
 	reference_to<mainWindow>(pw).numberDraw();
 }
-
+/*
 void mainWindow::cb_show(Address, Address pw)
 {
 	reference_to<mainWindow>(pw).numberShow();
@@ -154,6 +158,11 @@ void mainWindow::cb_numDivide(Address, Address pw)
 void mainWindow::cb_numFactorial(Address, Address pw)
 {
 	reference_to<mainWindow>(pw).buttonNumFactorial();
+}
+
+void mainWindow::cb_numX(Address, Address pw)
+{
+	reference_to<mainWindow>(pw).buttonNumX();
 }
 
 void mainWindow::cb_numPoint(Address, Address pw)
@@ -282,7 +291,13 @@ void mainWindow::buttonRightBracket()
 {
 	calculateFlow << ')';
 	numberShow();
-} 
+}
+
+void mainWindow::buttonNumX()
+{
+	calculateFlow << 'x';
+	numberShow();
+}
 
 void mainWindow::buttonNumDelete() 
 {
@@ -309,6 +324,7 @@ void mainWindow::numberCalculate()
 		*/ //只会输入数字和运算符号
 		ts.putback(t);
 		double tmp = expression();
+		final_result = tmp;
 		stringstream tmpFlow;
 		tmpFlow << tmp;
 		outputResult.put(tmpFlow.str());
@@ -330,6 +346,42 @@ void mainWindow::numberCalculate()
 	catch (posNumExp) {outputResult.put( "a positive number required" ); calculateFlow.str("");	}
 	catch (intRequired) { outputResult.put("an interger required" ); calculateFlow.str("");	}
 	catch (...) { outputResult.put( "unexpected error" ); calculateFlow.str("");	}
+}
+
+void mainWindow::numberDraw()
+{
+	Window draw_win(600,400, "garph");
+	string true_flow = calculateFlow.str();
+	Open_polyline line; //线的位置要重新考虑过，最好是一个try失败了 那就换一条线，因为try能失败肯定是某些点恰好不在定义域上
+	calculateFlow.str("");
+	bool is_continus = true;
+	double x = -280;
+	while (x < 280)
+	{
+		try 
+		{
+			stringstream tmp_flow;
+			string tmp_string;		
+			for (auto word : true_flow)
+			{
+				if (word == 'x')tmp_flow << x;
+				else tmp_flow << word;
+			}
+			x += 0.1;
+			tmp_string = tmp_flow.str();
+			 calculateFlow<<tmp_string;
+			 numberCalculate();
+			 outputResult.put("");
+			 double  y = final_result;
+			 line.add(Point(x+300, -y+200));
+			
+		}
+		catch (divByZero) { calculateFlow.str(""); is_continus = false; }
+		catch (...) { return; }
+	}
+	draw_win.attach(line);
+	gui_main();
+	return;
 }
 
 void mainWindow::numberShow()

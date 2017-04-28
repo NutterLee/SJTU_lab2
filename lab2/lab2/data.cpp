@@ -21,3 +21,5 @@ bool isNegtive = true;
 
 //¥Ê¥¢ªÊÕº±Ì¥Ô Ω
 vector<string>drawFlow;
+
+double final_result = 0;
