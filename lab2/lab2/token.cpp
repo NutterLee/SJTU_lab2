@@ -4,7 +4,7 @@
 #include"Point.h"
 #include"token.h"
 #include"Window.h"
-#include"mainWindow.h"
+#include"mainWindow.h" 
 
 
 void Token_stream::reset()
